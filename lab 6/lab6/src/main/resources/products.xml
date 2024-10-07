@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Products>
+<Product>
+    <name>Asus rog strix</name>
+    <type>техника</type>
+    <count>1</count>
+    <price>10000</price>
+</Product>
+<Product>
+<name>Razer Viper 8khz</name>
+<type>техника</type>
+<count>4</count>
+<price>1500</price>
+</Product>
+    <Product>
+        <name>Стол</name>
+        <type>мебель</type>
+        <count>10</count>
+        <price>3500</price>
+    </Product>
+
+</Products>
