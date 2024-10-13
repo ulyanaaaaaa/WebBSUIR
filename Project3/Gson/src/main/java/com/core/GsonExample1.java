@@ -25,12 +25,8 @@ public class GsonExample1 {
 
         ArrayList<Staff> staffs = createStaffObject();
 
-        // Java objects to String
         String json = gson.toJson(staffs);
 
-        //System.out.println(json);
-
-        // Java objects to File
         try (FileWriter writer = new FileWriter("C:\\Users\\Ulyana\\Desktop\\веб\\веб\\Project3\\Gson\\json\\student.json")) {
             gson.toJson(staffs, writer);
         } catch (IOException e) {

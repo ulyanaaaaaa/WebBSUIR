@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Organization>
+    <name>My Organization</name>
+    <departments>
+        <department>
+            <deptName>Dep1</deptName>
+            <deptNo>D01</deptNo>
+            <employees>
+                <employee>
+                    <empName>Petya</empName>
+                    <empNo>E01</empNo>
+                </employee>
+                <employee>
+                    <empName>Tanya</empName>
+                    <empNo>E02</empNo>
+                    <managerNo>E01</managerNo>
+                </employee>
+                <employee>
+                    <empName>Kolya</empName>
+                    <empNo>E03</empNo>
+                </employee>
+                <employee>
+                    <empName>Lisa</empName>
+                    <empNo>E04</empNo>
+                    <managerNo>E02</managerNo>
+                </employee>
+            </employees>
+            <location>NEW YORK</location>
+        </department>
+        <department>
+            <deptName>Dep2</deptName>
+            <deptNo>D02</deptNo>
+            <employees>
+                <employee>
+                    <empName>Anna</empName>
+                    <empNo>E05</empNo>
+                    <managerNo>E01</managerNo>
+                </employee>
+                <employee>
+                    <empName>Max</empName>
+                    <empNo>E06</empNo>
+                    <managerNo>E04</managerNo>
+                </employee>
+            </employees>
+            <location>LOS ANGELES</location>
+        </department>
+    </departments>
+</Organization>

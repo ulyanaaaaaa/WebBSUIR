@@ -13,8 +13,8 @@ public class task5
     public static void main(String[] args) {
         try {
             JDBC.connect();
-            String firstName ="Вадим";
-            String lastName = "Македон";
+            String firstName ="Ульяна";
+            String lastName = "Бобер";
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO authors (firstName, lastName) VALUES  (?, ?)");
             preparedStatement.setString(1, firstName);
             preparedStatement.setString(2, lastName);

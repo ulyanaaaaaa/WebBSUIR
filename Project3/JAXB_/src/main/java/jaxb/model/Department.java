@@ -2,29 +2,18 @@ package jaxb.model;
 
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "department")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Department {
-
     private String deptNo;
     private String deptName;
     private String location;
-
-    @XmlElementWrapper(name = "employees")
-    @XmlElement(name = "employee")
     private List<Employee> employees;
 
-    /**
-     * This default constructor is required if there are other constructors.
-     */
     public Department() {
-
     }
 
     public Department(String deptNo, String deptName, String location) {
@@ -33,6 +22,7 @@ public class Department {
         this.location = location;
     }
 
+    @XmlElement
     public String getDeptNo() {
         return deptNo;
     }
@@ -41,6 +31,7 @@ public class Department {
         this.deptNo = deptNo;
     }
 
+    @XmlElement
     public String getDeptName() {
         return deptName;
     }
@@ -49,6 +40,7 @@ public class Department {
         this.deptName = deptName;
     }
 
+    @XmlElement
     public String getLocation() {
         return location;
     }
@@ -57,6 +49,8 @@ public class Department {
         this.location = location;
     }
 
+    @XmlElementWrapper(name = "employees")
+    @XmlElement(name = "employee")
     public List<Employee> getEmployees() {
         return employees;
     }
@@ -64,5 +58,5 @@ public class Department {
     public void setEmployees(List<Employee> employees) {
         this.employees = employees;
     }
-
 }
+

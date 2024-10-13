@@ -9,7 +9,7 @@ public class JDBC
 
     public static void connect() throws SQLException
     {
-        String url = "jdbc:mysql://localhost/book?useUnicode=true&serverTimezone=UTC";
+        String url = "jdbc:mysql://localhost/books3?useUnicode=true&serverTimezone=UTC";
         connection = DriverManager.getConnection(url, "root", "24miloli");
         if (connection == null)
         {

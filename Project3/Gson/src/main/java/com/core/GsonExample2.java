@@ -29,7 +29,6 @@ public class GsonExample2 {
             List<Staff> lcs = (List<Staff>) new Gson()
                     .fromJson( reader , collectionType);
 
-            // print staff
             System.out.println(lcs);
 
         } catch (IOException e) {

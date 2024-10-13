@@ -1,22 +1,15 @@
 package jaxb.model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "employee")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Employee {
-
     private String empNo;
     private String empName;
     private String managerNo;
 
-    /**
-     * This default constructor is required if there are other constructors.
-     */
     public Employee() {
-
     }
 
     public Employee(String empNo, String empName, String managerNo) {
@@ -25,6 +18,7 @@ public class Employee {
         this.managerNo = managerNo;
     }
 
+    @XmlElement
     public String getEmpNo() {
         return empNo;
     }
@@ -33,6 +27,7 @@ public class Employee {
         this.empNo = empNo;
     }
 
+    @XmlElement
     public String getEmpName() {
         return empName;
     }
@@ -41,6 +36,7 @@ public class Employee {
         this.empName = empName;
     }
 
+    @XmlElement
     public String getManagerNo() {
         return managerNo;
     }
@@ -48,5 +44,4 @@ public class Employee {
     public void setManager(String managerNo) {
         this.managerNo = managerNo;
     }
-
 }

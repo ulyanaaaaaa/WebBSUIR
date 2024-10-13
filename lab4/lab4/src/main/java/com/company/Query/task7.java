@@ -25,9 +25,9 @@ public class task7
             System.out.println("Издатель добавлен");
 
 
-            String isbn = "0553418028";
-            String firstName = "Вадим";
-            String lastName = "Македон";
+            String isbn = "4";
+            String firstName = "4";
+            String lastName = "4";
             preparedStatement = connection.prepareStatement("INSERT INTO authorisbn (authorID, isbn) VALUES ((SELECT authorID FROM authors WHERE firstName = ? and lastName = ?), ?)");
             preparedStatement.setString(1, firstName);
             preparedStatement.setString(2, lastName);
