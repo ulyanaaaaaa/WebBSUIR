@@ -5,8 +5,6 @@ import com.dao.ProductDao;
 import java.util.List;
 public class ProductService
 {
-
-
         private ProductDao productDao = new ProductDao();
 
         public ProductService()
